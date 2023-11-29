@@ -1,0 +1,47 @@
+body{
+    background-color: #f9f2ec;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(Resimler/pale\ brown.jpeg);
+    margin: 20px;
+    position: sticky;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #392613;
+    padding: 5px;
+    margin: 3px;
+}
+
+.introduction{
+    background-image: url(Resimler/beige_background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    border: 4px double #dfbf9f;
+    padding: 100px;
+    color:#734d26;
+    margin: 20px;
+}
+
+.introduction p{
+    font-size: medium;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdownItems{
+    position: absolute;
+    display: none;
+}
+
+.dropdown.dropLink:hover .dropdownItems{
+    display: block;
+}
