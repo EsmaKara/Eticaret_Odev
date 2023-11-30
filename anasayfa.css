@@ -33,6 +33,11 @@ body{
     font-size: medium;
 }
 
+h1{
+    padding-bottom: 100px;
+}
+ 
+/* Olmayan Dropdown tkerar bak*/
 .dropdown{
     position: relative;
 }
@@ -45,3 +50,8 @@ body{
 .dropdown.dropLink:hover .dropdownItems{
     display: block;
 }
+
+
+
+
+
