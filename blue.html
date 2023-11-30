@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue</title>
+    <link rel="icon" href="Resimler/Blue/blue_icon.jpeg" type="image/icon"> <!--İCONU DÜZELT-->
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #e6f2ff;
+        }
+        .header{
+            background-image: url(Resimler/Blue/blue_navbar.jpeg);
+            padding: 30px;
+            text-align: center;
+            margin: 3px;
+        }
+        .header a{
+            text-decoration: none;
+            font-size: 80px;
+            color: #002b80;
+        }
+        img{
+            max-height: 450px;  
+            width: 100%;
+        }
+        .gallery{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 35px;
+        }
+        .column{
+            flex: 33%;
+        }
+        .column div{
+            border: 5px solid #80aaff;
+            background-color: #80aaff;
+            border-radius: 10px;
+            margin: 15px 10px;
+            color: #001a4d;
+        }
+        .column div:hover{
+            border-bottom: 50px solid #80aaff;
+        }
+        .price{
+            float:right;
+        }
+        .column p{
+            display: inline-block;
+        }
+        .footer{
+            text-align: center;
+            background-color: #b3ccff;
+            padding: 20px;
+            margin: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="#">Blue Stationary</a>
+        <p>Click for back to homepage.</p>
+    </div>
+
+    <div class="gallery">
+        <div class="column">
+            <div>
+                <img src="Resimler/Blue/blue_eraser.jpeg" alt="blue eraser photo">
+                <p>Blue Eraser</p>
+                <p class="price">0.50$</p>
+            </div>
+            <div>
+                <img src="Resimler/Blue/blue_tape.jpeg" alt="blue tape photo">
+                <p>Blue Tape</p>
+                <p class="price">0.50$</p>
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <img src="Resimler/Blue/blue_notebook.jpeg" alt="blue notebook photo">
+                <p>Blue Notebook</p>
+                <p class="price">2$</p>
+            </div>
+            <div>
+                <img src="Resimler/Blue/blue_pins.jpeg" alt="blue pins photo">
+                <p>Blue Pins</p>
+                <p class="price">0.50$</p>
+            </div>
+        </div>
+        <div class="column">
+            <div>
+                <img src="Resimler/Blue/blue_pencils.jpeg" alt="blue pencil photo">
+                <p>Blue Pencils</p>
+                <p class="price">3$</p>
+            </div>
+            <div>
+                <img src="Resimler/Blue/blue_pencilcase.jpeg" alt="blue pencilcase photo">
+                <p>Blue Pencilcase</p>
+                <p class="price">5$</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>@2023 Esma⁷ All rights reserved.</span>
+    </div>
+</body>
+</html>
