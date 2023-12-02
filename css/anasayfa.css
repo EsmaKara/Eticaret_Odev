@@ -57,7 +57,7 @@ h1{
 .dropdownItems{
     position: absolute;
     display: none;
-    margin-left: 120px;
+    margin-left: 235px;
 }
 
 .dropdownItems div{
@@ -97,6 +97,10 @@ h1{
     text-align: center;
 }
 
+.imgDiv img:hover{
+    opacity: 85%; /*    BÜYÜSÜNLER YAPABİLİRSEN       */
+}
+
 .footer{
     background-color: #ecd9c6;
     padding: 30px;
@@ -112,7 +116,7 @@ h1{
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:850px) {
     /* navbar section */
     .dropdown{
         display:none;
@@ -129,5 +133,11 @@ h1{
     }
     #catalog{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbarLeft{
+        display:none;
     }
 }

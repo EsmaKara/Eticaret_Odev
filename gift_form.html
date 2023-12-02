@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Gift Form</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surprise Gifts</title>
+    <link rel="stylesheet" href="css/gift_form.css">
+    <link rel="icon" href="" type="image/icon">
 </head>
 <body>
-    
+    <a href="anasayfa.html"><h1 id="title">Esma⁷'s Gift Form Page</h1></a>
+    <p style="text-align: center;">Click title for return homepage.</p>
+    <p id="description">Please enter your information <strong>completely and accurately</strong>.</p>
+    <div> 
+        <form id="gift-form" action="">
+            <fieldset id="personal-info">
+                <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your full name." required></label>
+                <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your mail adress." required></label>
+                <label id="number-label" for="number">Age: <input id="number" type="number" min="18" max="100" placeholder="Enter your age."></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Did you enjoy shopping with us?</legend>
+                <label for="satisfaction"><input id="satisfaction" name="enjoyment" type="radio" value="Yes" checked> Yeah, I enjoyed it very much. I will definitely shop again. </label>
+                <label for="satisfaction"><input id="satisfaction" name="enjoyment" type="radio" value="Maybe"> I think you should improve yourself a little bit more. </label>
+                <label for="satisfaction"><input id="satisfaction" name="enjoyment" type="radio" value="No"> Nope. </label>
+            </fieldset>
+
+            <fieldset>            
+                <legend>Which of our products do you like more? (You can choose more than one.)</legend>
+                <label><input type="checkbox" value="most_loved"> Blue Stationary</label>
+                <label><input type="checkbox" value="most_loved"> Lavender Stationary</label>
+                <label><input type="checkbox" value="most_loved"> Green Stationary</label>
+                <label><input type="checkbox" value="most_loved"> Black Stationary</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Select the collections (new products) you want us to add.</legend>
+                <label><input type="checkbox" name="new_products">Pink Stationary</label>
+                <label><input type="checkbox" name="new_products">Yellow Stationary</label>
+                <label><input type="checkbox" name="new_products">Orange Stationary</label>
+                <label><input type="checkbox" name="new_products">Bare Bears Stationary</label>
+                <textarea name="new_products" placeholder="...or just write it."></textarea>
+            </fieldset>
+
+            <fieldset>
+                <label for="advise">Give us advice so that we can improve ourselves.</label>
+                <textarea placeholder="I don'like your products or shipping, you can..."></textarea>
+                <label for="terms-conditions"><input id="terms-conditions" type="checkbox" value="terms" required checked> I accept <b>the terms and conditions.</b></label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer> 
+        <p class="footer" id="powered">@Powered by <i>Esma⁷.</i></p>
+    </footer>    
 </body>
 </html>
