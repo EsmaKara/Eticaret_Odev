@@ -7,6 +7,8 @@ body{
 /* Header css'*/
 .header{
     background-image: url(Resimler/Lavender/purple_navbar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30px;
     text-align: center;
     margin: 3px;

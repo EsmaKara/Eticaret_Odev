@@ -2,11 +2,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #e6f2ff;
+    background-color: #f2ffe6;
 }
 /* Header css'*/
 .header{
-    background-image: url(Resimler/Blue/blue_navbar.jpeg);
+    background-image: url(Resimler/Green/green_navbar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30px;
     text-align: center;
     margin: 3px;
@@ -15,7 +17,7 @@ body{
 .header a{
     text-decoration: none;
     font-size: 80px;
-    color: #002b80;
+    color:  #133926;
 }
 
 .description{
@@ -24,7 +26,7 @@ body{
     text-align: center;
     margin-top: 35px;
     margin-bottom: 0px;
-    color: #002266;
+    color:  #194d19;
 }
 
 /* add to shopping bag */
@@ -33,7 +35,7 @@ body{
 }
 .column div:hover .add{
     display: block;
-    border-bottom: 10px solid #80aaff;
+    border-bottom: 10px solid #006600;
     margin-top: 0px;
 }
 
@@ -41,15 +43,15 @@ button{
     width:30px;
     float: right;
     margin: 0px 3px;
-    border: 2px solid #002266;
+    border: 2px solid #003300;
     border-radius: 5px;
-    background-color: #e6eeff;
+    background-color: #e6ffe6;
     font-weight: 600;
 }
 
 /* for p elements */
 .product p{
-    text-shadow: -3px 5px  5px #1a66ff;
+    text-shadow: -3px 5px  3px #003300;
 }
 .price{
     float:right;
@@ -60,7 +62,7 @@ button{
 
 .footer{
     text-align: center;
-    background-color: #b3ccff;
+    background-color: #e6ffcc;
     padding: 20px;
     margin: 5px;
     font-style: italic;
@@ -84,27 +86,24 @@ img{
 }
 .column div{
     width: 95%;
-    border: 5px solid #80aaff;
-    background-color: #80aaff;
+    border: 5px solid #006600;
+    background-color: #006600;
     border-radius: 10px;
     margin: 15px 10px;
     color: white;
-    box-shadow: 8px 10px 15px #002266;
+    box-shadow: 8px 10px 15px #003300;
 }
     
 a{
     text-decoration: none;
-    color: #e6eeff;
-    text-shadow: -3px 5px 5px #001a4d;
+    color: #f2ffe6;
+    text-shadow: -3px 5px 5px  #0d1a00;
 }
 
-/* for responsive design */
+/* for responsive design */ /*TEKRAR BAK*/ 
 @media screen and (max-width: 900px) {
     .column {
         flex: 50%;
-        max-width: 50%;
-    }
-    .last{
         max-width: 50%;
     }
 }

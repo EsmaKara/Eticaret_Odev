@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: #f9f2ec;
+    background-color: #fef3e8;
 }
 
 .navbar{
@@ -11,8 +11,11 @@ body{
     justify-content: space-between;
     align-items: center;
     background-image: url(Resimler/beige_navbar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #d2a679;
     margin: 20px;
-    position: sticky;
+    padding: 25px;
 }
 
 .navbar a{
@@ -36,10 +39,12 @@ body{
     padding: 100px;
     color:#734d26;
     margin: 20px;
+    padding-bottom: 150px;
 }
 
 .introduction p{
     font-size: medium;
+    margin-bottom: 25px;
 }
 
 h1{
@@ -111,8 +116,8 @@ h1{
 /* for responsive design */
 @media screen and (max-width: 1200px) {
     .imgDiv{
-        width: 40%;
-        min-width: 40%;
+        width: 45%;
+        min-width: 45%;
     }
 }
 
@@ -127,7 +132,7 @@ h1{
 
     /* products section */
     .imgDiv{
-        width: 90%;
+        width: 94%;
         margin: 0px 25px;
         margin-bottom: 30px;
     }

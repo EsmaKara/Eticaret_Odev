@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2f2f2;
+}
+/* Header css'*/
+.header{
+    background-image: url(Resimler/Black/black_navbar.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    text-align: center;
+    margin: 3px;
+    margin-top: 35px;
+}
+.header a{
+    text-decoration: none;
+    font-size: 80px;
+    color: #0d0d0d;
+}
+
+.description{
+    font-size: large; 
+    font-weight: 500;  
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    color: #0d0d0d;
+}
+
+/* add to shopping bag */
+.add{
+    display: none;
+}
+.column div:hover .add{
+    display: block;
+    border-bottom: 10px solid #8c8c8c;
+    margin-top: 0px;
+}
+
+button{
+    width:30px;
+    float: right;
+    margin: 0px 3px;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    font-weight: 600;
+}
+
+/* for p elements */
+.product p{
+    text-shadow: -3px 5px  5px #e6e6e6;
+}
+.price{
+    float:right;
+}
+.column p{
+    display: inline-block;
+}
+
+.footer{
+    text-align: center;
+    background-color: #b3b3b3;
+    padding: 20px;
+    margin: 5px;
+    font-style: italic;
+}
+
+/* for flex structure */
+img{
+    max-height: 450px;  
+    width: 100%;
+    border-radius: 5px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 35px;
+}
+.column{
+    flex: 33%;
+    max-width: 33%;
+}
+.column div{
+    width: 95%;
+    border: 5px solid #8c8c8c;
+    background-color: #8c8c8c;
+    border-radius: 10px;
+    margin: 15px 10px;
+    color: white;
+    box-shadow: 8px 10px 15px #1a1a1a;
+}
+    
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: -3px 5px 5px #cccccc;
+}
+
+/* for responsive design */ /*TEKRAR BAK*/ 
+@media screen and (max-width: 900px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }    
+    .product{
+        margin: 30px 0px;
+    }
+}
