@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #e6e6ff;
+}
+/* Header css'*/
+.header{
+    background-image: url(Resimler/Lavender/purple_navbar.jpeg);
+    padding: 30px;
+    text-align: center;
+    margin: 3px;
+    margin-top: 20px;
+}
+.header a{
+    text-decoration: none;
+    font-size: 80px;
+    color: #3d0099;
+}
+
+.description{
+    font-size: large; 
+    font-weight: 500;  
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    color: #290066;
+}
+
+/* for flex structure */
+img{
+    max-height: 450px;  
+    width: 100%;
+    border-radius: 5px;
+    min-width: 200px;
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 35px;
+}
+.column{
+    flex: 33%;
+}
+.column div{
+    border: 5px solid #ccccff;
+    background-color: #ccccff;
+    border-radius: 10px;
+    margin: 15px 10px;
+    color: #4700b3;
+    box-shadow: 8px 10px 15px #290066;
+}
+    
+a{
+    text-decoration: none;
+    color: #e6eeff;
+    text-shadow: -3px 5px 5px #1f004d;
+}
+
+/* add to shopping bag */
+.add{
+    display: none;
+}
+.column div:hover .add{
+    display: block;
+    border-bottom: 10px solid #ccccff;
+    margin-top: 0px;
+}
+
+button{
+    width:30px;
+    float: right;
+    margin: 0px 3px;
+    border: 2px solid #4700b3;
+    border-radius: 5px;
+    background-color: #e6e6ff;
+    font-weight: 600;
+}
+
+/* for p elements */
+.product p{
+    text-shadow: -3px 5px  10px #1f004d;
+}
+.price{
+    float:right;
+}
+.column p{
+    display: inline-block;
+}
+
+.footer{
+    text-align: center;
+    background-color: #ccccff;
+    padding: 20px;
+    margin: 5px;
+    font-style: italic;
+}
+
+/* for responsive design*/

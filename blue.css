@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #e6f2ff;
+}
+/* Header css'*/
+.header{
+    background-image: url(Resimler/Blue/blue_navbar.jpeg);
+    padding: 30px;
+    text-align: center;
+    margin: 3px;
+    margin-top: 35px;
+}
+.header a{
+    text-decoration: none;
+    font-size: 80px;
+    color: #002b80;
+}
+
+.description{
+    font-size: large; 
+    font-weight: 500;  
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    color: #002266;
+}
+
+/* add to shopping bag */
+.add{
+    display: none;
+}
+.column div:hover .add{
+    display: block;
+    border-bottom: 10px solid #80aaff;
+    margin-top: 0px;
+}
+
+button{
+    width:30px;
+    float: right;
+    margin: 0px 3px;
+    border: 2px solid #002266;
+    border-radius: 5px;
+    background-color: #e6eeff;
+    font-weight: 600;
+}
+
+/* for p elements */
+.product p{
+    text-shadow: -3px 5px  5px #1a66ff;
+}
+.price{
+    float:right;
+}
+.column p{
+    display: inline-block;
+}
+
+.footer{
+    text-align: center;
+    background-color: #b3ccff;
+    padding: 20px;
+    margin: 5px;
+    font-style: italic;
+}
+
+/* for flex structure */
+img{
+    max-height: 450px;  
+    width: 100%;
+    border-radius: 5px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 35px;
+}
+.column{
+    flex: 33%;
+    max-width: 33%;
+}
+.column div{
+    width: 95%;
+    border: 5px solid #80aaff;
+    background-color: #80aaff;
+    border-radius: 10px;
+    margin: 15px 10px;
+    color: white;
+    box-shadow: 8px 10px 15px #002266;
+}
+    
+a{
+    text-decoration: none;
+    color: #e6eeff;
+    text-shadow: -3px 5px 5px #001a4d;
+}
+
+/* for responsive design */ /*TEKRAR BAK*/ 
+@media screen and (max-width: 900px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }    
+    .product{
+        margin: 30px 0px;
+    }
+}

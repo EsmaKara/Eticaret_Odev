@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: #f9f2ec;
 }
@@ -77,6 +81,53 @@ h1{
     color:#f9f2ec;
 }
 
+/* products flex structure */
+#catalog{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imgDiv{
+    width: 20%;
+    border: 3px solid #996633;
+    background-color: #ecd9c6;
+    border-radius: 8px;
+    margin: 25px 15px;
+    text-align: center;
+}
 
+.footer{
+    background-color: #ecd9c6;
+    padding: 30px;
+    text-align: center;
+    margin: 3px 5px;
+}
 
+/* for responsive design */
+@media screen and (max-width: 1200px) {
+    .imgDiv{
+        width: 40%;
+        min-width: 40%;
+    }
+}
 
+@media screen and (max-width:800px) {
+    /* navbar section */
+    .dropdown{
+        display:none;
+    }
+    .navbarLeft>a{
+        display: none;
+    }
+
+    /* products section */
+    .imgDiv{
+        width: 90%;
+        margin: 0px 25px;
+        margin-bottom: 30px;
+    }
+    #catalog{
+        flex-direction: column;
+    }
+}
