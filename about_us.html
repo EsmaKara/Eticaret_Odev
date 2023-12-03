@@ -10,146 +10,164 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <style>
-        *{
-    box-sizing: border-box;
-}
-
-body{
-    background-color: #f9f2ec;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(Resimler/beige_navbar.jpeg);
-    margin: 20px;
-    position: sticky;
-}
-
-.navbar a{
-    text-decoration: none;
-    color: #392613;
-    padding: 5px;
-    margin: 10px 15px;
-}
-
-.navbarRight div{
-    display: inline;
-}
-
-.introduction{
-    background-image: url(Resimler/beige_background.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    border: 4px double #dfbf9f;
-    padding: 100px;
-    color:#734d26;
-    margin: 20px;
-}
-
-.introduction p{
-    font-size: medium;
-}
-
-h1{
-    padding-bottom: 100px;
-    color: #4d3319;
-    font-family: 'cursive'; /* DEĞİŞTİR*/
-}
- 
-.dropdown{
-    position: relative;
-    display: inline;
-    cursor: pointer;
-}
-
-.dropdownItems{
-    position: absolute;
-    display: none;
-    margin-left: 120px;
-}
-
-.dropdownItems div{
-    padding: 10px 0px;
-    border:2px solid #4d2600;
-    box-shadow: 5px 1px 5px #392613;
-}
-
-.dropdown:hover .dropdownItems{
-    display: block;
-    background-color: #cc9966;
-    cursor: pointer;
-}
-
-.dropdownItems div:hover{
-    background-color: #4d2600;
-    color: #f9f2ec;
-}
-
-.dropdownItems div:hover a{
-    color:#f9f2ec;
-}
-
-/* products flex structure */
-#catalog{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.imgDiv{
-    width: 20%;
-    border: 3px solid #996633;
-    background-color: #ecd9c6;
-    border-radius: 8px;
-    margin: 25px 15px;
-    text-align: center;
-}
-
-.footer{
-    background-color: #ecd9c6;
-    padding: 30px;
-    text-align: center;
-    margin: 3px 5px;
-}
-
-/* for responsive design */
-@media screen and (max-width: 1200px) {
-    .imgDiv{
-        width: 40%;
-        min-width: 40%;
+    *{
+        box-sizing: border-box;
     }
-}
 
-@media screen and (max-width:850px) {
-    /* navbar section */
+    body{
+        background-color: #f9f2ec;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url(Resimler/beige_navbar.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 2px solid #d2a679;
+        margin: 20px;
+        padding: 25px;
+    }
+
+    .navbar a{
+        text-decoration: none;
+        vertical-align: middle;
+        color: #392613;
+        padding: 5px;
+        margin: 10px 15px;
+        font-size: large;
+        text-shadow: 4px 6px 10px #392613;
+    }
+
+    .navbarRight div{
+        display: inline;
+    }
+
+    .introduction{
+        background-image: url(Resimler/beige_background.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        border: 4px double #dfbf9f;
+        padding: 100px;
+        color:#734d26;
+        margin: 20px;
+        padding-bottom: 150px;
+    }
+
+    .introduction p{
+        font-size: medium;
+    }
+
+    h1{
+        padding-bottom: 40px;
+        color: #4d3319;
+        font-family: "Lucida Handwriting", cursive;
+        font-size: 45px;
+    }
+    
     .dropdown{
-        display:none;
+        position: relative;
+        display: inline;
+        cursor: pointer;
     }
-    .navbarLeft>a{
+
+    .dropdownItems{
+        position: absolute;
         display: none;
+        margin-left: 283px;
     }
 
-    /* products section */
-    .imgDiv{
-        width: 90%;
-        margin: 0px 25px;
-        margin-bottom: 30px;
+    .dropdownItems div{
+        padding: 10px 0px;
+        border:2px solid #4d2600;
+        box-shadow: 5px 1px 5px #392613;
     }
+
+    .dropdown:hover .dropdownItems{
+        display: block;
+        background-color: #cc9966;
+        cursor: pointer;
+    }
+
+    .dropdownItems div:hover{
+        background-color: #4d2600;
+        color: #f9f2ec;
+    }
+
+    .dropdownItems div:hover a{
+        color:#f9f2ec;
+    }
+
+    /* products flex structure */
     #catalog{
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-}
-
-@media screen and (max-width: 600px) {
-    .navbarLeft{
-        display:none;
+    .imgDiv{
+        width: 20%;
+        border: 3px solid #996633;
+        background-color: #ecd9c6;
+        border-radius: 8px;
+        margin: 25px 15px;
+        text-align: center;
     }
-}
 
+    .imgDiv img:hover{
+        opacity: 95%;
+        transform: scale(1.2);
+    }
+    .imgDiv img{
+        transition: .5s;
+    }
+
+    .footer{
+        background-color: #ecd9c6;
+        padding: 30px;
+        text-align: center;
+        margin: 3px 5px;
+    }
+
+    /* for responsive design */
+    @media screen and (max-width: 1200px) {
+        .imgDiv{
+            width: 45%;
+            min-width: 45%;
+        }
+    }
+
+    @media screen and (max-width:940px) {
+        /* navbar section */
+        .dropdown{
+            display:none;
+        }
+        .navbarLeft>a{
+            display: none;
+        }
+
+        /* products section */
+        .imgDiv{
+            width: 94%;
+            margin: 0px 25px;
+            margin-bottom: 30px;
+        }
+        #catalog{
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navbarLeft{
+            display:none;
+        }
+        .navbarRight{
+        margin-left: 25px;
+    }
+    }
     </style>
 
 </head>
@@ -157,19 +175,19 @@ h1{
 <body>
     <div class="navbar">
         <div class="navbarLeft">
-            <a href="anasayfa.html" style="display: inline;"><img src="" alt="" style="width: 45px; height: 45px;"></a>
+            <a href="anasayfa.html" style="display: inline;"><img src="Resimler/beige_seal_icon.ico" alt="beige seal wax icon" style="width: 75px; height: 65px;"></a>
             <a href="anasayfa.html" style="display: inline; margin-left: 2px;">Home</a>
             <a href="#" style="margin-left: 2px;">About Us</a>
             <div class="dropdown">
-                <span>Contacts</span>
+                <span style="font-size: large; text-shadow: 4px 6px 10px #392613;">Contacts</span>
                 <div class="dropdownItems">
                     <div>
                         <img src="Resimler/instagram.svg" alt="intagram icon" style="width: 15px; height: 15px;"></img>
-                        <a href="#" style="margin: 0px;">Instagram</a>
+                        <a href="#" style="margin: 0px; font-size: medium; text-shadow: none;">Instagram</a>
                     </div>
                     <div>
                         <img src="Resimler/mail.svg" alt="mail icon" style="width: 15px; height: 15px;">
-                        <a href="#" style="margin-left: 2px;">Email</a>
+                        <a href="#" style="margin-left: 2px; font-size: medium; text-shadow: none;">Email</a>
                     </div>
                     <div style="padding: 0px 2px; margin-bottom:0;">
                         <img src="Resimler/phone.svg" alt="phone icon" style="width: 15px; height: 15px;">
@@ -178,12 +196,12 @@ h1{
                     </div>
                     <div>
                         <img src="Resimler/clipboard.svg" alt="clipboard icon" style="width: 15px; height: 15px;">
-                        <a href="#" style="margin-left: 2px;">Form</a>
+                        <a href="#" style="margin-left: 2px; font-size: medium; text-shadow: none;">Form</a>
                     </div>
                 </div>
             </div>
             <a href="#catalog" style="display: inline;">Products</a>
-            <a href="#" style="margin-left: 0px;">Gift Form</a>
+            <a href="gift_form.html" style="margin-left: 0px;">Gift Form</a>
         </div>
     
         <div class="navbarRight">

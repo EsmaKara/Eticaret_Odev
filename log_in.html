@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+
+    <style>
+        body{
+            background-image: url(Resimler/log_in_background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            color: #005c99;
+            font-size: 85px;
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+        a{
+            text-decoration: none;
+            color: #005c99;
+        }
+        .mainDiv{
+            text-align: center;
+            background-color: hsl(204, 30%, 85%);
+            padding: 50px;
+            width: 15%;
+            margin: auto;
+            margin-bottom: 20px;
+            border-radius: 45px;
+        }
+        .items{
+            font-size: large;
+            margin-bottom: 15px;
+        }
+        label{
+            float: left; 
+            margin-bottom: 4px;
+            color: #001f33;
+            font-size: large;
+        }
+        .items input{
+            background-color: #f2e6d9;
+            height: 25px;
+            width: 100%;
+        }
+        input[type=button]{
+            width: 85px;
+            height: 30px;
+            border: 2px solid #001f33;
+            background-color: #f2e6d9;
+        }
+        .sign_up{
+            text-align: center;
+            margin-bottom: 220px;
+            color: #005c99;
+        }
+        .sign_up a{
+            text-decoration: underline;
+        }
+        .footer{
+            text-align: center;
+            color: #004d80;
+            padding-bottom: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="anasayfa.html"><h1>Log in</h1></a>
+        <p style="text-align: center; margin-bottom: 25px;">Click title for return homepage.</p>
+        <div class="mainDiv">
+            <div class="items">
+                <label for="email">E-mail: </label>
+                <input id="email" name="email" type="text" required>
+            </div>
+            <div class="items">
+                <label for="password">Password: </label>
+                <input id="password" name="password" type="password" required>
+            </div>
+            <input id="submit" type="button" value="Submit">
+        </div>
+        <div class="sign_up">
+            <p>You don't have an account. <a href="sign_up.html" >Sign up.</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer" id="powered">@Powered by <i>Esma⁷.</i></p>
+    </div>
+</body>
+</html>
