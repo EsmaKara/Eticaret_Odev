@@ -4,8 +4,10 @@
 
 body{
     background-color: #fef3e8;
+    cursor: url(Resimler/beige_flower_icon.ico),auto;
 }
 
+/* navbar */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -17,7 +19,6 @@ body{
     margin: 20px;
     padding: 25px;
 }
-
 .navbar a{
     text-decoration: none;
     vertical-align: middle;
@@ -27,11 +28,11 @@ body{
     font-size: large;
     text-shadow: 4px 6px 10px #392613;
 }
-
 .navbarRight div{
     display: inline;
 }
 
+/* Banner */ 
 .introduction{
     background-image: url(Resimler/beige_background.jpeg);
     background-repeat: no-repeat;
@@ -44,50 +45,42 @@ body{
     margin: 20px;
     padding-bottom: 150px;
 }
-
 .introduction p{
     font-size: medium;
     margin-bottom: 25px;
 }
-
 h1{
     padding-bottom: 30px;
     color: #4d3319;
     font-family: "Lucida Handwriting", cursive;
     font-size: 45px;
 }
- 
+
+.cart button{
+    float: left; 
+    margin-left: 2px;
+    margin-top: 6px;
+    font-size: large;
+    vertical-align: bottom;
+}
+
+/* navbar dropdown*/
 .dropdown{
-    position: relative;
     display: inline;
     vertical-align: middle;
     cursor: pointer;
 }
-
-.dropdownItems{
-    position: absolute;
-    display: none;
-    margin-left: 210px;
-}
-
-.dropdownItems div{
+.dropdown-menu div{
     padding: 10px 0px;
     border:2px solid #4d2600;
     box-shadow: 5px 1px 5px #392613;
+    background-color: #d2a679;
 }
-
-.dropdown:hover .dropdownItems{
-    display: block;
-    background-color: #cc9966;
-    cursor: pointer;
-}
-
-.dropdownItems div:hover{
+.dropdown-menu div:hover{
     background-color: #4d2600;
     color: #f9f2ec;
 }
-
-.dropdownItems div:hover a{
+.dropdown-menu div:hover a{
     color:#f9f2ec;
 }
 

@@ -11,36 +11,45 @@
 </head>
 
 <body>
+    <!--Header-->
     <div class="navbar">
         <div class="navbarLeft">
             <a href="anasayfa.html" style="display: inline;"><img src="Resimler/beige_seal_icon.ico" alt="beige seal wax icon" style="width: 75px; height: 65px;"></a>
             <a href="about_us.html" style="margin-left: 2px;">About Us</a>
             <div class="dropdown">
-                <span style="font-size: large; text-shadow: 4px 6px 10px #392613;">Contacts</span>
-                <div class="dropdownItems">
-                    <div>
-                        <img src="Resimler/instagram.svg" alt="intagram icon" style="width: 15px; height: 15px;"></img>
-                        <a href="#" style="margin: 0px; font-size: medium; text-shadow: none;">Instagram</a>
-                    </div>
-                    <div>
-                        <img src="Resimler/mail.svg" alt="mail icon" style="width: 15px; height: 15px;">
-                        <a href="#" style="margin-left: 2px; font-size: medium; text-shadow: none;">Email</a>
-                    </div>
-                    <div style="padding: 0px 2px; margin-bottom:0;">
-                        <img src="Resimler/phone.svg" alt="phone icon" style="width: 15px; height: 15px; margin-top: 5px;">
-                        <pre>Call us; 
-0212 000 0000</pre>
-                    </div>
-                    <div>
-                        <img src="Resimler/clipboard.svg" alt="clipboard icon" style="width: 15px; height: 15px;">
-                        <a href="#" style="margin-left: 2px; font-size: medium; text-shadow: none;">Form</a>
-                    </div>
-                </div>
+                <button style="font-size: large; text-shadow: 4px 6px 10px #392613;" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contacts</button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <div>
+                            <img src="Resimler/instagram.svg" alt="intagram icon" style="width: 15px; height: 15px;"></img>
+                            <a href="#" style="margin: 0px; font-size: medium; text-shadow: none;">Instagram</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="Resimler/mail.svg" alt="mail icon" style="width: 15px; height: 15px;">
+                            <a href="#" style="margin-left: 2px; font-size: medium; text-shadow: none;">Email</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="padding: 0px 2px; margin-bottom:0;">
+                            <img src="Resimler/phone.svg" alt="phone icon" style="width: 15px; height: 15px; margin-top: 5px;">
+                            <pre>Call us; 
+    0212 000 0000</pre>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="Resimler/clipboard.svg" alt="clipboard icon" style="width: 15px; height: 15px;">
+                            <a href="#" style="margin-left: 2px; font-size: medium; text-shadow: none;">Form</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <a href="#catalog" style="display: inline;">Products</a>
             <a href="gift_form.html" style="margin-left: 0px;">Gift Form</a>
         </div>
-    
         <div class="navbarRight">
             <div>
                 <img src="Resimler/users.svg" alt="user icon" style="width: 20px; height: 18px; float: left; margin-top: 18px;">
@@ -48,7 +57,15 @@
             </div>
             <div>
                 <img src="Resimler/shopping_bag.svg" alt="shopping bag icon" style="width: 20px; height: 18px; float: left; margin-top: 18px;">
-                <a href="#" style="float: left; margin-left: 2px;">Cart</a>
+                <a href="#" class="cart">
+                    <button type="button" class="btn position-relative">
+                        Cart
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="background-color: #392613;">
+                          3+
+                        <span class="visually-hidden">items in your cart</span>
+                        </span>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
@@ -62,7 +79,7 @@
         </div>
     </div>
 
-    <h4 style="text-align: center; color:#4d3319;">Products</h4>
+    <h4 style="text-align: center; margin-bottom: 15px; color:#4d3319;">Products</h4>
     <div id="catalog">
         <div class="imgDiv">
             <a href="blue.html"><img src="Resimler/Blue/blue_seal.ico" alt="blue wax seal icon"></a>
