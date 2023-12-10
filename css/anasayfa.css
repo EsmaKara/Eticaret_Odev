@@ -62,6 +62,7 @@ h1{
     margin-top: 6px;
     font-size: large;
     vertical-align: bottom;
+    text-shadow: 4px 6px 10px #392613;
 }
 
 /* navbar dropdown*/
