@@ -13,9 +13,9 @@
     <div> 
         <form id="gift-form" action="">
             <fieldset id="personal-info">
-                <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your full name." required></label>
-                <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your mail adress." required></label>
-                <label id="number-label" for="number">Age: <input id="number" type="number" min="18" max="100" placeholder="Enter your age."></label>
+                <label id="name-label" for="name" name="name">Name: <input id="name" type="text" placeholder="Enter your full name." required></label>
+                <label id="email-label" for="email" name="mail">Email: <input id="email" type="email" placeholder="Enter your mail adress." required></label>
+                <label id="number-label" for="number" name="age">Age: <input id="number" type="number" min="18" max="100" placeholder="Enter your age."></label>
             </fieldset>
 
             <fieldset>
@@ -54,5 +54,7 @@
     <footer> 
         <p class="footer" id="powered">@Powered by <i>Esma⁷.</i></p>
     </footer>    
+
+    <script src="js/gift_form.js"></script>
 </body>
 </html>

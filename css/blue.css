@@ -30,23 +30,18 @@ body{
 }
 
 /* add to shopping bag */
-.add{
+.product>div{
     display: none;
 }
-.column div:hover .add{
+.product button{
+    background-color: #b3d1ff;
+    color: #002266;
+}
+.column .product:hover>div{
     display: block;
     border-bottom: 10px solid #80aaff;
     margin-top: 0px;
-}
-
-button{
-    width:30px;
-    float: right;
-    margin: 0px 3px;
-    border: 2px solid #002266;
-    border-radius: 5px;
-    background-color: #e6eeff;
-    font-weight: 600;
+    text-align: center;
 }
 
 /* for p elements */

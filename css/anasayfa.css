@@ -49,7 +49,7 @@ body{
     font-size: medium;
     margin-bottom: 25px;
 }
-h1{
+.introduction h1{
     padding-bottom: 30px;
     color: #4d3319;
     font-family: "Lucida Handwriting", cursive;
@@ -63,6 +63,9 @@ h1{
     font-size: large;
     vertical-align: bottom;
     text-shadow: 4px 6px 10px #392613;
+}
+.cart span:empty{
+    display: none;
 }
 
 /* navbar dropdown*/
@@ -151,4 +154,59 @@ h1{
     .navbarRight{
         margin-left: 25px;
     }
+}
+
+
+/* for js */
+.tdysButton{
+    display: block;
+    background: #ecd9c6;
+    border-radius: 5px;
+    color: #4d3319;
+    margin-left: 47.8%;
+    width: 65px; 
+    height: 25px;
+    margin-top: 0;
+    padding-bottom: 25px;
+}
+  
+.main-popup{
+    background: #e6ccb3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+	color: #604020;
+	border:3px solid #604020;
+ }
+  
+.popup{  
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: auto;  
+    margin-top: 230px;
+    padding: 30px;
+    background: white;
+    position: relative;
+	border:3px solid #392613;
+}
+  
+.popup a{
+    background: #996633;
+    color: white;
+    padding: 7px 11px;
+    text-decoration: none;
+   
+}
+  
+.popup-close{
+    position: absolute;
+    cursor: pointer;
+    top: 4px;
+    right: 7px;
+    width: 35px;
+    height: 35px;
 }
