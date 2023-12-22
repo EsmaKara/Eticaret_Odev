@@ -5,7 +5,6 @@ const close=document.querySelector('.popup-close');
 
 
 button.addEventListener('click',()=>{
-	
     mainPopup.style.display='block';
 })
 

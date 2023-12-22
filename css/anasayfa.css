@@ -56,15 +56,17 @@ body{
     font-size: 45px;
 }
 
-.cart button{
+/* for cart button on navbar */
+.cart-button{
     float: left; 
     margin-left: 2px;
+    margin-right: 15px;
     margin-top: 6px;
     font-size: large;
     vertical-align: bottom;
     text-shadow: 4px 6px 10px #392613;
 }
-.cart span:empty{
+.cart-button span:empty{
     display: none;
 }
 
@@ -163,7 +165,7 @@ body{
     background: #ecd9c6;
     border-radius: 5px;
     color: #4d3319;
-    margin-left: 47.8%;
+    margin-left: 47.5%;
     width: 65px; 
     height: 25px;
     margin-top: 0;

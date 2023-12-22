@@ -6,67 +6,89 @@
     <title>Blue</title>
     <link rel="icon" href="Resimler/Blue/blue_flower_icon.ico" type="image/icon">
     <link rel="stylesheet" href="css/blue.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <div class="header">
         <a href="anasayfa.html">Blue Stationary</a>
         <p>Click title for return homepage.</p>
+
+        <div class="cart-navbar">
+            <button type="button" class="cart-button">
+                Cart
+            </button>                
+        </div>
     </div>
+
+    <div class="cart">
+        <h2 style="text-align: center; color: #002266; font-weight: 700; margin-top: 2rem;">Your Cart</h2>
+        <div class="cart-content">
+           
+        </div>
+        <div class="total">
+            <div class="total-title">Total: </div>
+            <div class="total-price">$0</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+        <i class='bx bx-x' id="close-cart"></i>
+    </div>
+
+
 
     <p class="description">Click the photo of the product you want to add to your shopping bag.</p>
     <div class="gallery">
         <div class="column">
             <div class="product">
-                <a href="#"><img src="Resimler/Blue/blue_eraser.png" alt="blue eraser photo"></a>
-                <p>Blue Eraser</p>
+                <img src="Resimler/Blue/blue_eraser.png" class="product-img" alt="blue eraser photo">
+                <p class="product-title">Blue Eraser</p>
                 <p class="price">0.50$</p>
                 <div>
-                    <button class="add">Add to Your Shopping Bag:</button>
+                    <button class="add-cart">Add to Your Shopping Bag:</button>
                 </div>
             </div>
             <div class="product">
-                <a href="#"><img src="Resimler/Blue/blue_tape.png" alt="blue tape photo"></a>
-                <p>Blue Tape</p>
+                <img src="Resimler/Blue/blue_tape.png" class="product-img" alt="blue tape photo">
+                <p class="product-title">Blue Tape</p>
                 <p class="price">0.50$</p>
                 <div>
-                    <button class="add">Add to Your Shopping Bag:</button>
+                    <button class="add-cart">Add to Your Shopping Bag:</button>
                 </div>
             </div>
         </div>
         <div class="column">
             <div class="product">
-                <a href="#"><img src="Resimler/Blue/blue_notebook.png" alt="blue notebook photo"></a>
-                <p>Blue Notebook</p>
+                <img src="Resimler/Blue/blue_notebook.png" class="product-img" alt="blue notebook photo">
+                <p class="product-title">Blue Notebook</p>
                 <p class="price">2$</p>
                 <div>
-                    <button class="add">Add to Your Shopping Bag:</button>
+                    <button class="add-cart">Add to Your Shopping Bag:</button>
                 </div>
             </div>
             <div class="product">
-                <a href="#"><img src="Resimler/Blue/blue_pins.png" alt="blue pins photo"></a>
-                <p>Blue Pins</p>
+                <img src="Resimler/Blue/blue_pins.png" class="product-img" alt="blue pins photo">
+                <p class="product-title">Blue Pins</p>
                 <p class="price">0.50$</p>
                 <div>
-                    <button class="add">Add to Your Shopping Bag:</button>
+                    <button class="add-cart">Add to Your Shopping Bag:</button>
                 </div>
             </div>
         </div>
         <div class="column last">
             <div class="product">
-                <a href="#"><img src="Resimler/Blue/blue_pencils.png" alt="blue pencil photo"></a>
-                <p>Blue Pencils</p>
+                <img src="Resimler/Blue/blue_pencils.png" class="product-img" alt="blue pencil photo">
+                <p class="product-title">Blue Pencils</p>
                 <p class="price">3$</p>
                 <div>
-                    <button class="add">Add to Your Shopping Bag:</button>
+                    <button class="add-cart">Add to Your Shopping Bag:</button>
                 </div>
             </div>
             <div class="product">
-                <a href="#"><img src="Resimler/Blue/blue_pencilcase.png" alt="blue pencilcase photo"></a>
-                <p>Blue Pencilcase</p>
+                <img src="Resimler/Blue/blue_pencilcase.png" class="product-img" alt="blue pencilcase photo">
+                <p class="product-title">Blue Pencilcase</p>
                 <p class="price">5$</p>
                 <div>
-                    <button class="add">Add to Your Shopping Bag:</button>
+                    <button class="add-cart">Add to Your Shopping Bag:</button>
                 </div>
             </div>
         </div>
@@ -76,6 +98,6 @@
         <span>@2023 Esma⁷ All rights reserved.</span>
     </div>
 
-    <script src="./js/addingBasket.js"></script>
+    <script src="./js/blue.js"></script>
 </body>
 </html>

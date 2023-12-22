@@ -9,93 +9,38 @@
 
 <body>
     <div class="cart">
-        <div class="items">
-            <h1>Items in Your Shopping Bag</h1>
-            <a href="anasayfa.html">Back to Home Page</a>
-            <ul class="items-list">
-                <li>
-                    <img src="Resimler/Green/green_pencils.png" alt="green pencils photo">
-                    <div class="item-info">
-                        <h3>Green Pencils</h3>
-                        <span>1.5$</span><br>
-                        <span class="remove">remove</span>
-                    </div>
-                    <div>
-                        <span class="decrease">-</span>
-                        <span style="font-size: 20px;">2</span>
-                        <span class="increase">+</span>
-                    </div>
-                </li>
-                <li>
-                    <img src="Resimler/Green/green_pencils.png" alt="green pencils photo">
-                    <div class="item-info">
-                        <h3>Green Pencils</h3>
-                        <span>1.5$</span><br>
-                        <span class="remove">remove</span>
-                    </div>
-                    <div>
-                        <span class="decrease">-</span>
-                        <span style="font-size: 20px;">2</span>
-                        <span class="increase">+</span>
-                    </div>
-                </li>
-                <li>
-                    <img src="Resimler/Green/green_pencils.png" alt="green pencils photo">
-                    <div class="item-info">
-                        <h3>Green Pencils</h3>
-                        <span>1.5$</span><br>
-                        <span class="remove">remove</span>
-                    </div>
-                    <div>
-                        <span class="decrease">-</span>
-                        <span style="font-size: 20px;">2</span>
-                        <span class="increase">+</span>
-                    </div>
-                </li>
-                <li>
-                    <img src="Resimler/Green/green_pencils.png" alt="green pencils photo">
-                    <div class="item-info">
-                        <h3>Green Pencils</h3>
-                        <span>1.5$</span><br>
-                        <span class="remove">remove</span>
-                    </div>
-                    <div>
-                        <span class="decrease">-</span>
-                        <span style="font-size: 20px;">2</span>
-                        <span class="increase">+</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="form">
-            <h1>User Information</h1>
-            <form action="">
-                <fieldset id="personal-info">
-                    <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your full name." required></label>
-                    <label id="pn-label" for="phone">Phone Number: <input id="phone" type="tel" placeholder="Enter your phone number." maxlength="11" minlength="11"></label>
-                </fieldset>
-                <fieldset>
-                    <label for="dropdown"> Select payment method:  
-                        <select id="dropdown">
-                            <option value="">(select one)</option>
-                            <option value="1">Advance Payment</option>
-                            <option value="2">9 Installments</option>
-                            <option value="3">6 Installments</option>
-                            <option value="4">3 Installments</option>
-                        </select>
-                    </label>
-                </fieldset>
-                <fieldset>
-                    <label for="adress">Enter your full adress info.</label>
-                    <textarea placeholder="... Fatih, Istanbul/Turkey"></textarea>
-                    <label for="terms-conditions"><input id="terms-conditions" type="checkbox" value="terms" required checked> I accept <b>the terms and conditions.</b></label>
-                    <span class="footer">@2023 Esma⁷ All rights reserved.</span>
-                </fieldset>
-            </form>
-            <div class="total">
-                <p>Total: 100 $</p>
-                <input id="submit" type="submit" value="Purchase">
+        <div class="items">              
+            <div class="form">
+                <a href="anasayfa.html"><h1>User Information</h1></a>
+                <p>Click title for return homepage.</p>
+
+                <form action="">
+                    <fieldset id="personal-info">
+                        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your full name." required></label>
+                        <label id="pn-label" for="phone">Phone Number: <input id="phone" type="tel" placeholder="Enter your phone number." maxlength="11" minlength="11"></label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="dropdown"> Select payment method:  
+                            <select id="dropdown">
+                                <option value="">(select one)</option>
+                                <option value="1">Advance Payment</option>
+                                <option value="2">9 Installments</option>
+                                <option value="3">6 Installments</option>
+                                <option value="4">3 Installments</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="adress">Enter your full adress info.</label>
+                        <textarea placeholder="... Fatih, Istanbul/Turkey"></textarea>
+                        <label for="terms-conditions"><input id="terms-conditions" type="checkbox" value="terms" required checked> I accept <b>the terms and conditions.</b></label>
+                        <span class="footer">@2023 Esma⁷ All rights reserved.</span>
+                    </fieldset>
+                </form>
+                <div class="total">
+                    <p class="total-price">Total: 100 $</p>
+                    <input id="submit" type="submit" value="Purchase">
+                </div>
             </div>
         </div>
     </div>

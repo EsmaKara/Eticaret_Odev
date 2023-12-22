@@ -1,4 +1,6 @@
-const form = document.getElementById('gift-form');
+const form=document.querySelector('.form');
+
+const usernamePattern =/{1,200}/
 const agePattern=/{2}/;
 
 // form.addEventListener('submit', e=>{
@@ -9,10 +11,18 @@ const agePattern=/{2}/;
 //     if()
 // })
 
-form.name.addEventListener('keyup', e =>{
+form.addEventListener('submit', e =>{
+    e.preventDefault();
 
-    if(form.name != 0)
+});
+
+form.username.addEventListener('keyup', e =>{
+    if(usernamePattern.test(e.target.value))
     {
-        form.name.setAttribute('class','success');
+        form.username.setAttribute('class','success');
     }
-})
+    else
+    {
+        form.username.setAttribute('class','error');
+    }
+}); 
