@@ -16,8 +16,8 @@
 
                 <form action="">
                     <fieldset id="personal-info">
-                        <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your full name." required></label>
-                        <label id="pn-label" for="phone">Phone Number: <input id="phone" type="tel" placeholder="Enter your phone number." maxlength="11" minlength="11"></label>
+                        Name: <input id="name" name="username" type="text" placeholder="Enter your full name." required></label>
+                        Phone Number: <input id="phone" type="tel" placeholder="Enter your phone number." maxlength="11" minlength="11"></label>
                     </fieldset>
                     <fieldset>
                         <label for="dropdown"> Select payment method:  
@@ -38,12 +38,12 @@
                     </fieldset>
                 </form>
                 <div class="total">
-                    <p class="total-price">Total: 100 $</p>
                     <input id="submit" type="submit" value="Purchase">
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="/js/cart.js"></script>
 </body>
 </html>

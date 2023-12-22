@@ -46,11 +46,12 @@
             height: 25px;
             width: 100%;
         }
-        input[type=button]{
+        input[type=submit]{
             width: 85px;
             height: 30px;
             border: 2px solid #001f33;
             background-color: #f2e6d9;
+            cursor: pointer;
         }
         .sign_up{
             text-align: center;
@@ -78,16 +79,18 @@
             </div>
             <div class="items">
                 <label for="password">Password: </label>
-                <input id="password" name="password" type="password" required>
+                <input id="password" name="password" pattern=".{8,16}" minlength="8" maxlength="16" type="password" required>
             </div>
-            <input id="submit" type="button" value="Submit">
+            <input id="submit" type="submit" value="Submit">
         </div>
         <div class="sign_up">
-            <p>You don't have an account. <a href="sign_up.html" >Sign up.</a></p>
+            <p>You don't have an account? <a href="sign_up.html" >Sign up.</a></p>
         </div>
     </div>
     <div class="footer">
         <p class="footer" id="powered">@Powered by <i>Esma⁷.</i></p>
     </div>
+
+    <script src="/js/login_signup.js"></script>
 </body>
 </html>

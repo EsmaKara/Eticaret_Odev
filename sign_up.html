@@ -51,6 +51,7 @@
             height: 30px;
             border: 2px solid #001f33;
             background-color: #f2e6d9;
+            cursor: pointer;
         }
         .log_in{
             text-align: center;
@@ -86,7 +87,7 @@
             </div>
             <div class="items">
                 <label for="password">Password: </label>
-                <input id="password" name="password" type="password" required>
+                <input id="password" patten=".{8,16}" name="password" type="password" required>
             </div>
             <input id="submit" type="button" value="Submit">
         </div>

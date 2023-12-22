@@ -6,7 +6,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     image-rendering: 100%;
-    padding-bottom: 12.5%;
+    padding-bottom: 3.7%;
 }
 .cart{
     margin-top: 0.5%;
@@ -54,20 +54,14 @@ input[type=submit]{
     border-radius: 20px;
     width: 125px;
     height: 30px;
-    margin-right: 10%;
     font-weight: 700;
+    cursor: pointer;
 }
 .total{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
+    padding: 20px;
     margin: 10px 10%;
     background-color: #39261395;
-}
-.total-price{
-    display: inline;
-    margin-top: 0;
-    margin-left: 10%;
 }
 
 .footer{
@@ -79,26 +73,25 @@ input[type=submit]{
 }
 
 /* for responsive design */ 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1350px) {
     body{
-        padding-bottom: 75%;
+        padding-bottom: 7%;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
     body{
-        padding-bottom: 85%;
+        padding-bottom: 15%;
     }
-}
-
-@media screen and (max-width: 1100px) {
     .form{
-        width: 100%;
-        padding-left: 18%;
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 650px) {
+    body{
+        padding-bottom: 18%;
+    }
     .form h1{
         margin-left: 48px;
     }
@@ -108,4 +101,16 @@ input[type=submit]{
     .form h1{
         margin-left: 23px;
     }
+}
+
+/* for js code */
+.success{
+    border: 4px solid green;
+    background-color: #996633;
+    color: #f9f2ec;
+}
+.error{
+    border: 4px solid red;
+    background-color: #f2e6d9;
+    color:#f2e6d9;
 }

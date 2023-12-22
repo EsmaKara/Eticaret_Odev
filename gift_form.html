@@ -13,24 +13,33 @@
     <div> 
         <form id="gift-form" action="" class="form">
             <fieldset id="personal-info">
-                <label id="name-label" for="name" name="username">Name: <input id="name" type="text" placeholder="Enter your full name." required></label>
-                <label id="email-label" for="email" name="mail">Email: <input id="email" type="email" placeholder="Enter your mail adress." required></label>
-                <label id="number-label" for="number" name="age">Age: <input id="number" type="number" min="18" max="100" placeholder="Enter your age."></label>
+                Name: <input id="name" name="username" type="text" placeholder="Enter your full name." required>
+                Email: <input id="email" name="mail" type="email" placeholder="Enter your mail adress." required>
+                Age: <input id="number" name="age" type="number" min="18" max="120" placeholder="Enter your age.">
             </fieldset>
 
             <fieldset>
                 <legend>Did you enjoy shopping with us?</legend>
-                <label for="satisfaction"><input id="satisfaction" name="enjoyment" type="radio" value="Yes" checked> Yeah, I enjoyed it very much. I will definitely shop again. </label>
-                <label for="satisfaction"><input id="satisfaction" name="enjoyment" type="radio" value="Maybe"> I think you should improve yourself a little bit more. </label>
-                <label for="satisfaction"><input id="satisfaction" name="enjoyment" type="radio" value="No"> Nope. </label>
+                <span class="btnRadio">
+                    <input id="satisfaction" name="enjoyment" type="radio" value="Yes" checked>
+                    <label for="satisfaction"> Yeah, I enjoyed it very much. I will definitely shop again. </label>
+                </span>
+                <span class="btnRadio">
+                    <input id="satisfaction" name="enjoyment" type="radio" value="Maybe">
+                    <label for="satisfaction"> I think you should improve yourself a little bit more. </label>
+                </span>
+                <span class="btnRadio">
+                    <input id="satisfaction" name="enjoyment" type="radio" value="No">
+                    <label for="satisfaction"> Nope. </label>
+                </span>
             </fieldset>
 
             <fieldset>            
                 <legend>Which of our products do you like more? (You can choose more than one.)</legend>
-                <label><input type="checkbox" value="most_loved"> Blue Stationary</label>
-                <label><input type="checkbox" value="most_loved"> Lavender Stationary</label>
-                <label><input type="checkbox" value="most_loved"> Green Stationary</label>
-                <label><input type="checkbox" value="most_loved"> Black Stationary</label>
+                <span class="loved"><input type="checkbox" value="most_loved" class="lovedOnes"> Blue Stationary </span>
+                <span class="loved"><input type="checkbox" value="most_loved" class="lovedOnes"> Lavender Stationary </span>
+                <span class="loved"><input type="checkbox" value="most_loved" class="lovedOnes"> Green Stationary </span>
+                <span class="loved"><input type="checkbox" value="most_loved" class="lovedOnes"> Black Stationary </span>
             </fieldset>
 
             <fieldset>
@@ -54,7 +63,6 @@
     <footer> 
         <p class="footer" id="powered">@Powered by <i>Esma⁷.</i></p>
     </footer>    
-
     <script src="js/gift_form.js"></script>
 </body>
 </html>

@@ -75,12 +75,13 @@
       padding: 5px;
     }
 
-    .cart button{
-    float: left; 
-    margin-left: 2px;
-    margin-top: 6px;
-    font-size: large;
-    vertical-align: bottom;
+    .cart-button{
+      float: left; 
+      margin-left: 2px;
+      margin-top: 6px;
+      color: #4d3319;
+      vertical-align: bottom;
+      text-shadow: 4px 6px 10px #392613;
     }
 
     /* navbar dropdown*/
@@ -212,12 +213,6 @@
     0212 000 0000</pre>
                         </div>
                     </li>
-                    <li>
-                        <div>
-                            <img src="Resimler/clipboard.svg" alt="clipboard icon" style="width: 15px; height: 15px;">
-                            <a href="#" style="margin-left: 2px; font-size: medium; text-shadow: none;">Form</a>
-                        </div>
-                    </li>
                 </ul>
             </div>
             <a href="#catalog" style="display: inline;">Source</a>
@@ -229,17 +224,13 @@
                 <a href="log_in.html" style="float: left; margin-left: 2px;">Sign up or Log in</a>
             </div>
             <div>
-                <img src="Resimler/shopping_bag.svg" alt="shopping bag icon" style="width: 20px; height: 18px; float: left; margin-top: 18px;">
-                <a href="cart.html" class="cart">
-                    <button type="button" class="btn position-relative">
-                        Cart
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="background-color: #392613;">
-                          3+
-                        <span class="visually-hidden">items in your cart</span>
-                        </span>
-                    </button>
-                </a>
-            </div>
+              <img src="Resimler/shopping_bag.svg" alt="shopping bag icon" style="width: 20px; height: 18px; float: left; margin-top: 18px;">
+              <a href="cart.html">
+                  <button type="button" class="btn cart-button" style="font-size: large; color:#4d3319; text-shadow: 4px 6px 10px #392613;">
+                      Buy Now
+                  </button>           
+              </a>     
+          </div>
         </div>
     </div>
 
