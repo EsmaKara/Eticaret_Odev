@@ -16,8 +16,10 @@
 
                 <form action="" class="submit-form">
                     <fieldset id="personal-info">
-                        Name: <input id="name" name="username" type="text" minlength="3" maxlength="100" placeholder="Enter your full name." required></label>
-                        Phone Number: <input id="phone" name="phone" type="tel" placeholder="Enter your phone number." maxlength="11" minlength="11" required></label>
+                        Name: <input id="name" name="username" type="text" minlength="3" maxlength="100" placeholder="Enter your full name."
+                         required></label>
+                        Phone Number: <input id="phone" name="phone" type="tel" placeholder="Enter your phone number." maxlength="11" minlength="11"
+                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
                     </fieldset>
                     <fieldset>
                         <label for="dropdown"> Select payment method:  
@@ -32,7 +34,8 @@
                     <fieldset>
                         <label for="adress">Enter your full adress info.</label>
                         <textarea name="adress" placeholder="... Fatih, Istanbul/Turkey" required></textarea>
-                        <label for="terms-conditions"><input id="terms-conditions" type="checkbox" value="terms" required checked> I accept <b>the terms and conditions.</b></label>
+                        <label for="terms-conditions"><input id="terms-conditions" type="checkbox" value="terms" required checked> I accept 
+                            <b>the terms and conditions.</b></label>
                         <span class="footer">@2023 Esma⁷ All rights reserved.</span>
                     </fieldset>
                     <div class="total">

@@ -100,7 +100,7 @@ a{
     text-shadow: -3px 5px 5px  #0d1a00;
 }
 
-/* for responsive design */ /*TEKRAR BAK*/ 
+/* for responsive design */
 @media screen and (max-width: 900px) {
     .column {
         flex: 50%;
