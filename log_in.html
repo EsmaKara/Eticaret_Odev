@@ -72,7 +72,7 @@
     <div>
         <a href="anasayfa.html"><h1>Log in</h1></a>
         <p style="text-align: center; margin-bottom: 25px;">Click title for return homepage.</p>
-        <div class="mainDiv">
+        <form class="mainDiv form">
             <div class="items">
                 <label for="email">E-mail: </label>
                 <input id="email" name="email" type="text" required>
@@ -82,7 +82,8 @@
                 <input id="password" name="password" pattern=".{8,16}" minlength="8" maxlength="16" type="password" required>
             </div>
             <input id="submit" type="submit" value="Submit">
-        </div>
+        </form> 
+
         <div class="sign_up">
             <p>You don't have an account? <a href="sign_up.html" >Sign up.</a></p>
         </div>
@@ -91,6 +92,6 @@
         <p class="footer" id="powered">@Powered by <i>Esma⁷.</i></p>
     </div>
 
-    <script src="/js/login_signup.js"></script>
+    <script src="/js/log_in.js"></script>
 </body>
 </html>

@@ -14,32 +14,32 @@
                 <a href="anasayfa.html"><h1>User Information</h1></a>
                 <p>Click title for return homepage.</p>
 
-                <form action="">
+                <form action="" class="submit-form">
                     <fieldset id="personal-info">
-                        Name: <input id="name" name="username" type="text" placeholder="Enter your full name." required></label>
-                        Phone Number: <input id="phone" type="tel" placeholder="Enter your phone number." maxlength="11" minlength="11"></label>
+                        Name: <input id="name" name="username" type="text" minlength="3" maxlength="100" placeholder="Enter your full name." required></label>
+                        Phone Number: <input id="phone" name="phone" type="tel" placeholder="Enter your phone number." maxlength="11" minlength="11" required></label>
                     </fieldset>
                     <fieldset>
                         <label for="dropdown"> Select payment method:  
-                            <select id="dropdown">
-                                <option value="">(select one)</option>
-                                <option value="1">Advance Payment</option>
-                                <option value="2">9 Installments</option>
-                                <option value="3">6 Installments</option>
-                                <option value="4">3 Installments</option>
+                            <select id="dropdown" name="payment">
+                                <option value="Advance Payment">Advance Payment</option>
+                                <option value="9 Installments">9 Installments</option>
+                                <option value="6 Installments">6 Installments</option>
+                                <option value="3 Installments">3 Installments</option>
                             </select>
                         </label>
                     </fieldset>
                     <fieldset>
                         <label for="adress">Enter your full adress info.</label>
-                        <textarea placeholder="... Fatih, Istanbul/Turkey"></textarea>
+                        <textarea name="adress" placeholder="... Fatih, Istanbul/Turkey" required></textarea>
                         <label for="terms-conditions"><input id="terms-conditions" type="checkbox" value="terms" required checked> I accept <b>the terms and conditions.</b></label>
                         <span class="footer">@2023 Esma⁷ All rights reserved.</span>
                     </fieldset>
+                    <div class="total">
+                        <input id="submit" type="submit" value="Purchase">
+                    </div>
                 </form>
-                <div class="total">
-                    <input id="submit" type="submit" value="Purchase">
-                </div>
+                
             </div>
         </div>
     </div>
