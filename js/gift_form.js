@@ -36,8 +36,6 @@ form.age.addEventListener('keyup', e =>{
     }
 })
 
-
-
 // function saydir(){
 //     const checkBox = document.getElementsByClassName(".lovedOnes");
 //     const sayac = 0;
@@ -62,13 +60,11 @@ form.addEventListener('submit', e=>{
     const answer = form.enjoyment.value;
     if(answer === "Yes")
     {
+        //if(saydir() >= 3)
         console.log("Success.");
         alert("Here's a message! \n Congratulations. You won our gift.");
     }else{
         console.log("Fail.");
         alert("Try again.");
     }
-    
 })
-
-
