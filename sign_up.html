@@ -66,6 +66,10 @@
             color: #004d80;
             padding-bottom: 13px;
         }
+
+        input:out-of-range{
+			border: 2px solid red;
+		}
     </style>
 </head>
 <body>
@@ -75,7 +79,7 @@
         <form class="mainDiv Sform">
             <div class="items">
                 <label for="name">Name: </label>
-                <input id="name" name="name" type="text" minlength="3" maxlength="100" required>
+                <input id="name" name="name" type="text" pattern=".{a-z}" minlength="3" maxlength="100" required>
             </div>
             <div class="items">
                 <label for="age">Age: </label>
@@ -87,7 +91,7 @@
             </div>
             <div class="items">
                 <label for="password">Password: </label>
-                <input id="password" pattern=".{8,16}" name="Spassword" type="password" required>
+                <input id="password" pattern=".{8,16}" minlength="8" maxlength="16" name="Spassword" type="password" required>
             </div>
             <input id="submit" type="submit" value="Submit">
         </form>
