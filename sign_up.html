@@ -70,6 +70,12 @@
         input:out-of-range{
 			border: 2px solid red;
 		}
+        input:valid{
+            border: 2px solid green;
+        }
+        input[type=submit]{
+            border: 2px solid black;
+        }
     </style>
 </head>
 <body>
@@ -79,7 +85,7 @@
         <form class="mainDiv Sform">
             <div class="items">
                 <label for="name">Name: </label>
-                <input id="name" name="name" type="text" pattern=".{a-z}" minlength="3" maxlength="100" required>
+                <input id="name" name="name" type="text"  pattern="[A-Za-z]" minlength="3" maxlength="100" required>
             </div>
             <div class="items">
                 <label for="age">Age: </label>
